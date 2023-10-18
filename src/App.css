@@ -38,11 +38,14 @@
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   background: #fafaff;
- 
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-size: 100px;
+ }
+ .weatherIcon{
+   
+padding-left: 35vh;
  }
  .widget .wetherInfo{
   flex: 0 0 70%;
@@ -103,14 +106,61 @@
  }
  .widget .extra-temp p{
   font-size: 25px;
-  font-weight: 600;
+  font-weight: 500;
+  
  }
- .temp-info-minmax,
- .weather-extra-info,
- .two-sided-section{
-  display: grid;
-  grid-template-columns: repeat(2,1gr);
+ .extra-info-leftside{
+  width: 19vh;
+ 
+ }
+  .extra-temp .temp-info-minmax {
+  display: flex;
+  justify-content:  space-between;
+   
+}
+.two-sided-section{
+  display: flex;
+ 
+}
+ 
+
+ .search{
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+ }
+ .searchTerm{
+  width: 50%;
+  border: none;
+  padding: 16px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  font-size: 18px;
+ }
+ .searchTerm:focus{
+  color: #00b4cc;
+ }
+ .searchButton{
+  width: 80px;
+  height: 52px;
+  border: none;
+  background: #018b9c;
   text-align: center;
-  align-items: center;
-  color: #70c1b3;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+  outline: none;
+ }
+ .searchButton:hover{
+  background-color: #17b8ce;
+ }
+ .wrap{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: -150px;
+  margin-bottom: 50px;
  }
